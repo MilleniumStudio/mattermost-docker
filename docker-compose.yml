@@ -64,7 +64,7 @@ services:
       - "traefik.http.routers.mattermost-secured.tls.certresolver=le"
 
   traefik:
-    image: traefik:latest
+    image: traefik:2.3
     restart: unless-stopped
     command: >
       --api.insecure=true
